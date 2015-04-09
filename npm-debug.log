@@ -1,0 +1,72 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-build-control',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 warn package.json architech@0.0.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'grunt-build-control', null ]
+7 verbose cache add name=undefined spec="grunt-build-control" args=["grunt-build-control",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'grunt-build-control',
+8 verbose parsed url   path: 'grunt-build-control',
+8 verbose parsed url   href: 'grunt-build-control' }
+9 silly lockFile 78a33528-grunt-build-control grunt-build-control
+10 verbose lock grunt-build-control /Users/mikias/.npm/78a33528-grunt-build-control.lock
+11 silly lockFile 78a33528-grunt-build-control grunt-build-control
+12 silly lockFile 78a33528-grunt-build-control grunt-build-control
+13 verbose addNamed [ 'grunt-build-control', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile 6fa7dc02-grunt-build-control grunt-build-control@
+16 verbose lock grunt-build-control@ /Users/mikias/.npm/6fa7dc02-grunt-build-control.lock
+17 silly addNameRange { name: 'grunt-build-control', range: '*', hasData: false }
+18 verbose request where is /grunt-build-control
+19 verbose request registry http://registry.npmjs.org/
+20 verbose request id a14251db891b2775
+21 verbose url raw /grunt-build-control
+22 verbose url resolving [ 'http://registry.npmjs.org/', './grunt-build-control' ]
+23 verbose url resolved http://registry.npmjs.org/grunt-build-control
+24 verbose request where is http://registry.npmjs.org/grunt-build-control
+25 info trying registry request attempt 1 at 07:54:35
+26 http GET http://registry.npmjs.org/grunt-build-control
+27 info retry will retry, error on last attempt: Error: connect ECONNREFUSED
+28 info trying registry request attempt 2 at 07:54:45
+29 http GET http://registry.npmjs.org/grunt-build-control
+30 info retry will retry, error on last attempt: Error: connect ECONNREFUSED
+31 info trying registry request attempt 3 at 07:55:45
+32 http GET http://registry.npmjs.org/grunt-build-control
+33 silly lockFile 6fa7dc02-grunt-build-control grunt-build-control@
+34 silly lockFile 6fa7dc02-grunt-build-control grunt-build-control@
+35 error Error: connect ECONNREFUSED
+35 error     at errnoException (net.js:904:11)
+35 error     at Object.afterConnect [as oncomplete] (net.js:895:19)
+35 error  { [Error: connect ECONNREFUSED]
+35 error   code: 'ECONNREFUSED',
+35 error   errno: 'ECONNREFUSED',
+35 error   syscall: 'connect',
+35 error   parent: 'architech' }
+36 error If you are behind a proxy, please make sure that the
+36 error 'proxy' config is set properly.  See: 'npm help config'
+37 error System Darwin 13.4.0
+38 error command "node" "/usr/local/bin/npm" "install" "grunt-build-control" "--save-dev"
+39 error cwd /Users/mikias/projects/WORKS/architech-app
+40 error node -v v0.10.33
+41 error npm -v 1.4.28
+42 error syscall connect
+43 error code ECONNREFUSED
+44 error errno ECONNREFUSED
+45 error stack Error: connect ECONNREFUSED
+45 error stack     at errnoException (net.js:904:11)
+45 error stack     at Object.afterConnect [as oncomplete] (net.js:895:19)
+46 verbose exit [ 1, true ]

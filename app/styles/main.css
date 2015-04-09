@@ -1,0 +1,167 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+
+/* Custom views styles -------------------------------*/
+
+.wrapper {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.jumbotron {
+    color: #777;
+    -webkit-box-shadow: 10px 10px 5px #888888;
+    box-shadow: 10px 10px 5px #888888;
+}
+.ban {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.search-form {
+    margin-top: 15px;
+}
+.city-inp {
+    padding: 10px;
+    height: 40px;
+    border: solid 5px #c9c9c9;
+    box-shadow: inset 0 0 0 1px #707070;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+.city-inp:focus, .city-inp.focus {
+    border: solid 5px #969696;
+}
+.search-button-div {
+    margin-top: 15px;
+}
+.search-button {
+    width: 150px;
+    border-radius: 0;
+    background: #2ab27b;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    -webkit-box-shadow: 10px 10px 5px #888888;
+    box-shadow: 10px 10px 5px #888888;
+}
+.weather_items {
+    margin-top: 15px;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+}
+.item {
+    border: 1px #ccc solid;
+    border-radius: 3px;
+    padding: 20px 20px;
+}
+.inner-item:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.inner-item {
+    text-align: center;
+    margin: 5px 5px;
+    border: 1px #ccc solid;
+    padding: 5px 5px;
+    background: #2ab27b;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 5px #888888;
+    box-shadow: 10px 10px 5px #888888;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+.date-par {
+    background: #fff;
+    color: #777;
+}
+.temp-par:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    background: #C32F34;
+    color: #fff;
+}
+.temp-par {
+    background: #fff;
+    color: #777;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+/*--------------------------------------------------- */
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
