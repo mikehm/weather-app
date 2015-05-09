@@ -49,12 +49,15 @@ $scope.askWeather = function(city) {
   weatherService.getWeather(city).then(
     function(data) {
         console.log(data);
-        $scope.list = data;      
+        $scope.list = data;
+        console.log($scope.list);      
         $scope.list.forEach(function(item, index) {
             $scope.press.push(item.main.pressure);      
     });
 
     var j, i;
+
+    $scope.listSkipped = [];
 /*
  The for loop below is used for looping over the list array and extracting out 
  date and temperature values and pushing them into the arrays $scope.time_array
@@ -62,7 +65,8 @@ $scope.askWeather = function(city) {
  the purpose of making the x-axis values of the chart (in the view) increment by 2 
  so as to prevent the time (date) values from stacking over each other.
 */        
-    for (j = 0; j < $scope.list.length; j = j + 2) {
+    for (j = 0; j < $scope.list.length; j = j + 4) {
+        $scope.listSkipped.push($scope.list[j]);
             var date = new Date($scope.list[j].dt * 1000);
             var formatted_date = $filter('date')(date, 'short');
             $scope.time_array.push(formatted_date);
