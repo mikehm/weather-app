@@ -26,7 +26,7 @@ angular.module('architechApp')
   		
   		$http.get('http://api.openweathermap.org/data/2.5/forecast/city?q='+city+'&units=metric&mo?callback=JSON_CALLBACK')	
   			.success(function(data){    
-  				deferred.resolve(data.list);
+  				deferred.resolve(data);
   			})
   			.error(function(err){
   				console.log('Weather data not available')
