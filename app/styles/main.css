@@ -10,8 +10,7 @@ body {
 .footer {
   padding-left: 15px;
   padding-right: 15px;
-}
-
+}s
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
@@ -23,15 +22,12 @@ body {
   line-height: 40px;
   padding-bottom: 19px;
 }
-
-
 /* Custom views styles -------------------------------*/
-
 .wrapper {
     padding-left: 5%;
     padding-right: 5%;
 }
-.jumbotron {
+.jumbotron  {
     color: #777;
     -webkit-box-shadow: 10px 10px 5px #888888;
     box-shadow: 10px 10px 5px #888888;
